@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hospito</title>
+		<link rel="stylesheet" type="text/css" href="homestyle1.css">
+		<script src="jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="script1.js"></script>
+	</head>
+	<body onload = "func()">
+		<div>
+			<div>
+				<img id="logo"  class="spin" src="logo.png">
+			</div>
+			<center>
+				<img src="name.png" height="100px">
+				<span><p id = "greet"></p>
+				<select class = "lst" id="action" onchange="action()">
+					<option value="none" selected>Account Action</option>
+					<option value="logout">Logout</option>
+					<option value="change">Change Password</option>
+					<option value="delete">Delete Account</option>
+				</select></span>
+			</center>
+		</div>
+		<div id="navbar">
+			<div id="nav">
+				<ul>
+					<li class="opt"><a class="menu" href="home.html">Home</a></li>
+					<li class="opt"><a class="menu" href="consult.php">Consult Online</a></li>
+					<li class="opt"><a class="menu" href="find.php">Find Doctors</a></li>
+					<li class="opt"><a class="menu" href="order.html">Order Medicine</a></li>
+					<li class="opt"><a class="menu" href="explore.html"> Articles</a></li>
+					<li class="opt"><a class="menu" href="doctor.php">Doctor's Area</a></li>
+					<li class="opt"><a href="#l6" class="menu">Contact Us</a></li>
+				</ul>	
+			</div>
+		</div>
+		<section class="parallax">
+			<div class="parallax-inner">
+			</div>
+		</section>
+		<p>
+		<table width="100%">
+				<tr>
+						<td><p class="main_page_text">
+							<big>Skip the waiting room.</big><br> 
+							<big><big><a href="consult.php"  id="contact"> Consult us Online!</a></big></big><br>
+								&#10004;3M+ patients helped<br>
+								&#10004;Verified doctors respond in 20 minutes<br>
+								&#10004;100% private and confidential
+							</p>
+						</td>
+						<td>
+							<img src="main1.jpeg" style = "float:right;"><br>
+						</td>
+				</tr>
+				<tr>
+						<td>
+							<img src="doctors1.jpeg" id="sec_img">	
+						</td>
+						
+						<td style="text-align:right">
+								<p class="main_page_text1">
+								<big>Instant appointment with doctors.</big><br>
+								<big><big>Guaranteed!</big></big><br>
+									&#10004;100,000 Verified doctors<br>
+									&#10004;3M+ Patient recommendations<br>
+									&#10004;25M Patients/year
+								</p>
+						</td>
+				</tr>
+				<tr>
+						<td>
+							<p class="main_page_text">
+							<big>Get all your <a href="order.html" id="contact">medicines.</a></big><br>
+							<big><big>Everytime. On time.</big></big><br>
+									&#10004;Guaranteed availability<br>
+									&#10004;Over 130,000+ genuine medicines<br>		
+									&#10004;Home delivery in 24hrs
+							</p>
+						</td>
+						<td>
+							<img src="medicines.jpeg" id="med"style = "float:right;"><br>
+						</td>
+				</tr>
+				<tr>
+							
+						<td>
+							<img src="health.jpeg" id="art">		
+						</td>
+						<td style="text-align:right">
+								<p class="main_page_text1">
+								<big><big>Read top <a href="explore.html" id="contact">articles</a> written by Experts!</big></big><br>
+								&#10004;These are 100% genuine
+								</p>
+						</td>
+				</tr>
+				<tr>
+						<td>
+							<p class="main_page_text1">
+							
+								<big><big>Patients are looking for doctors like you.</big></big><br>
+								<big>Millions of patients are looking for the right doctor on Hospito.<br>
+								<a href="doctor.html"  id="contact">Start your digital journey</a> with Hospito Profile</big>
+							</p>
+						</td>
+						<td>
+							<img src="doc.jpeg" style="float:right">
+						</td>
+				</tr>
+			</table>
+						<br>
+
+			<div style="background-color:  #f0f0f5; height:585px;">
+				<p id="l6">Have questions about our products,support services, or anything else?<br>
+				 Let us know and we will get back to you.<br><br>Got questions? Or Suggestions?<br>
+				If you are looking for more information,just give us a call or drop us a mail.</p><div id="map" style="width:800px;height:400px;background:red;float:right;margin-right:75px;margin-top:30px;"></div>
+				<h2 id="h1_1">Contact Us</h2>
+				<div class="contact_us">Our Address:</div>
+				<div class="a1">
+					<img src="loca.png" style="height:25px;weight:35px;">
+					IIIT Chittoor, Sri City,<br>5655 Central Express way,<br>Sri City, Satyavedu Mandal,<br>Chittoor District, Andhra Pradesh - 517541.
+				</div><br>
+				<div class="contact_us">You can also reach us at:</div>
+				<div class="a1">
+					<img src="call.png" style="height:25px;weight:35px;">
+					Tel:7676897890<br>
+					Mobile:+91-8097561256<br><br>
+				</div>
+				<div class="contact_us">Mail us at:</div>
+				<div class="a1">
+					<img src="34.png" style="height:25px;weight:35px;">
+					<big>parthprasad.p17@iiits.in</big>
+				</div>
+			</div>
+	</body>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB66kGP6U5bfFSwSCMvkESsVD0N1FErzFQ&callback=myMap"></script>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>explore articles</title>
+		<link rel="stylesheet" type="text/css" href="explore.css">
+		<script src="jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="script1.js"></script>
+		<style>
+
+		* {
+				box-sizing: border-box;
+		  }
+
+			body {
+				/*background-color: #f1f1f1;*/
+				/*font-family: Arial;*/
+			}
+
+			/* Center website */
+			.main {
+				max-width: 1000px;
+				margin: auto;
+			}
+
+			h1 {
+				font-size: 50px;
+				word-break: break-all;
+			}
+
+			.row {
+				margin: 10px -16px;
+			}
+
+			/* Add padding BETWEEN each column */
+			.row,
+			.row > .column {
+				padding: 8px;
+			}
+
+			/* Create three equal columns that floats next to each other */
+			.column {
+				float: left;
+				width: 33.33%;
+				display: none; /* Hide all elements by default */
+			}
+
+			/* Clear floats after rows */ 
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			/* Content */
+			.content1 {
+				float:left;
+				background-color: white;
+				padding: 10px;
+				height: 310px;
+			}
+			
+			.content2 {
+				float:left;
+				background-color: white;
+				padding: 10px;
+				height: 550px;
+			}
+			
+			.content3 {
+				float:left;
+				background-color: white;
+				padding: 10px;
+				height: 280px;
+			}
+
+			/* The "show" class is added to the filtered elements */
+			.show {
+			  display: block;
+			}
+			#heading {padding-left:150px;}
+			#h1_1 {text-align:center;}
+		</style>
+	</head>
+	<body onload = "func()">
+		<div>
+			<div>
+				<img id="logo"  class="spin" src="logo.png">
+			</div>
+			<center>
+				<img src="name.png" height="100px">
+				<span><p id = "greet"></p>
+				<select class = "lst" id="action" onchange="action()">
+					<option value="none" selected>Account Action</option>
+					<option value="logout">Logout</option>
+					<option value="change">Change Password</option>
+					<option value="delete">Delete Account</option>
+				</select></span>
+			</center>
+		</div>
+		<div id="navbar">
+			<div id="nav">
+				<ul>
+					<li class="opt"><a class="menu" href="home.html">Home</a></li>
+					<li class="opt"><a class="menu" href="consult.php">Consult Online</a></li>
+					<li class="opt"><a class="menu" href="find.php">Find Doctors</a></li>
+					<li class="opt"><a class="menu" href="order.html">Order Medicine</a></li>
+					<li class="opt"><a class="menu" href="explore.html"> Articles</a></li>
+					<li class="opt"><a class="menu" href="doctor.php">Doctor's Area</a></li>
+					<li class="opt"><a href="home.html#l6" class="menu">Contact Us</a></li>
+				</ul>	
+			</div>
+		</div>
+		<section class="parallax">
+			<div class="parallax-inner">
+			</div>
+		<!--</section>-->
+		<div style = "background-color:#f0f0f5; font-family: Arial;">
+		<p>
+		<h2 id="h1_1">Explore Articles</h2>
+		<p id="heading"><big><big>Top health articles<br>Get trending tips from doctors and health experts</big></big><br>
+		
+		<!--content-->
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<input type="radio" onclick="filterSelection('all')" name="category" checked> Show all	
+<input type="radio" onclick="filterSelection('trending')" name="category"> Trending
+<input type="radio" onclick="filterSelection('lifeHacks')" name="category"> Life Hacks
+<input type="radio" onclick="filterSelection('nutrition')" name="category"> Nutrition & Diet
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column trending">
+    <div class="content1">
+      <img src="explore1.jpg" alt="trendinG" style="width:100%">
+      <a style ="color:green" href="https://www.popsci.com/dominate-thanksgiving-turkey-trot">
+      <h4>Your last-minute training guide to dominating this year's Turkey Trot</h4></a>
+    </div>
+  </div>
+  <div class="column trending">
+    <div class="content1">
+    <img src="explore2.webp" alt="trendinG" style="width:100%">
+      <a style ="color:green" href="https://www.popsci.com/why-does-my-arm-hurt-day-after-i-get-my-flu-shot">
+      <h4>Why does my arm hurt the day after I get my flu shot?</h4></a>
+    </div>
+  </div>
+  <div class="column trending">
+    <div class="content1">
+    <img src="explore3.webp" alt="trendinG" style="width:100%">
+      <a style ="color:green" href="https://www.popsci.com/electroshock-therapy-post-traumatic-stress-disorder">
+      <h4>Electroshock therapy is actually still in use—and could help treat PTSD</h4></a>
+    </div>
+  </div>
+  
+  <div class="column lifeHacks">
+    <div class="content2">
+      <img src="explore4.jpg" alt="lifeHackS" style="width:100%">
+      <h4>Kickstart your morning with lemon water</h4>
+      <p>Start every morning with a glass of water with fresh-squeezed lemon or lemon oil! (Just make sure it’s an edible, 100% natural-grade oil and not anything synthetic if you go the essential oil route.) There are so many benefits of lemon water, but the main reasons to drink it are that it flushes your system of toxins, alkalizes your body, and keeps your digestive system working as it should. This gives you more energy, fights off inflammation, and provides you with an all-natural health boost that’s easy peasy, lemon squeezy.</p>
+    </div>
+  </div>
+  <div class="column lifeHacks">
+    <div class="content2">
+    <img src="explore5.jpg" alt="lifeHackS" style="width:100%">
+      <h4>Use baking soda as a natural produce scrub</h4>
+      <p>Combine a few teaspoons of baking soda to 1-2 cups of water and you have a natural produce scrub! You can add the mixture to a spray bottle or combine it in a large mixing bowl. Either way, use the solution to get pesticides, dirt, and other unwanted goodies out of every nook and cranny in your produce. Make sure to rinse your veggies and fruits thoroughly afterward for a fresh, clean taste.</p>
+    </div>
+  </div>
+  <div class="column lifeHacks">
+    <div class="content2">
+    <img src="explore6.jpg" alt="lifeHackS" style="width:100%">
+      <h4>Never eat a bad egg again</h4>
+      <p>You’re not a bad egg; we think you’re great! But eating a bad egg? Not so great. To test the freshness of those last few guys hanging around in the lifeHackSton, drop ‘em in a bowl of water. Fresh eggs will sink, eggs perfect for hard-boiling will sink on their side, and bad eggs will float. See the <a style = "color:blue"href="https://food-hacks.wonderhowto.com/how-to/tell-if-your-expired-eggs-are-still-good-eat-0154309/">full egg explanation here</a>. (Photo Credit: Food-Hacks.WonderHowTo.com)</p>
+    </div>
+  </div>
+  
+  <div class="column nutrition">
+    <div class="content3">
+      <img src="explore7.jpg" alt="lifeHackS" style="width:100%">
+      <a style ="color:green" href="https://www.medicalnewstoday.com/articles/40253.php"><h4>Fish oils and omega-3 oils: Can they benefit our health?</h4></a>
+    </div>
+  </div>
+  <div class="column nutrition">
+    <div class="content3">
+       <img src="explore8.jpg" alt="lifeHackS" style="width:100%">
+      <a style ="color:green" href="https://www.medicalnewstoday.com/articles/269143.php"><h4>The health benefits of popular foods</h4></a>
+    </div>
+  </div>
+  <div class="column nutrition">
+    <div class="content3">
+    <img src="explore9.jpg" alt="lifeHackS" style="width:100%">
+     <a style ="color:green" href="https://www.medicalnewstoday.com/articles/262978.php"><h4>How Much Sugar Is In Your Food And Drink?</h4></a>
+    </div>
+  </div>
+  <div class="column nutrition">
+    <div class="content3">
+    <img src="explore10.jpg" alt="lifeHackS" style="width:100%">
+     <a style ="color:green" href="https://www.medicalnewstoday.com/articles/319991.php"><h4>No sugar diet plan: What you need to know</h4></a>
+    </div>
+  </div>
+    <div class="column nutrition">
+    <div class="content3">
+    <img src="explore11.jpg" alt="lifeHackS" style="width:100%">
+     <a style ="color:green" href="https://www.medicalnewstoday.com/articles/245588.php"><h4>How Many Calories Should I Eat a Day?</h4></a>
+    </div>
+  </div>
+  
+  <div class="column nutrition">
+    <div class="content3">
+    <img src="explore12.jpg" alt="lifeHackS" style="width:100%">
+     <a style ="color:green" href="https://www.medicalnewstoday.com/articles/161618.php"><h4>What are the health benefits of vitamin D?</h4></a>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+  }
+}
+
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+</script>
+
+	</body>
+</html>

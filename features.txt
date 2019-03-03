@@ -1,0 +1,13 @@
+We plan to buid a website to help solve basic health related problems of peolpe. It will (tentatively,subjected to our js,php etc knowledge on completion of the course) have the following features:
+1) Collect user's information and create an account.
+	If the user is a patient:
+2) Find information about doctors in a particular city. This info includes contact details, specialization, experience etc.  
+3) Consult a doctor online, for minor problems, and to talk to psychiatrist.
+4) Buy medicines online.
+5) Book appointments with doctors, hospitals, laboratories.
+6) Read health related articles written by experts, for health tips and awareness. 
+
+	If the user is a doctor:
+7) Get listed on the website.
+8) read articles related to research, and new medicines.
+//9) Advertise about job vacancies for the post of nurse, assistant etc. 

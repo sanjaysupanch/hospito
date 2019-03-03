@@ -1,0 +1,156 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+#name{
+	position: absolute;
+}
+.fixnav{
+	position:fixed;
+	top:0;
+}
+#navbar{
+	padding-left: none;
+	height: 10vh;
+	background-color: #2196F3;
+	z-index:1000;
+}
+#navbar,#nav{
+	float: right;
+	width: 100%;
+}
+.opt{
+	padding:1vh 2vw;
+	list-style: none;
+	display: inline-block;
+	font-size: 1.75vw;
+}
+.opt,a{
+	text-decoration: none;
+	color: #fafafa;
+}
+#logo{
+	float: left;
+	height: 100px;
+}
+.menu:hover{
+	color: #0b7dda;
+}
+.spin{
+    animation:spin 4s linear infinite;
+}
+@keyframes spin{
+	100%{
+		transform:rotatey(360deg);
+	}
+}
+.spin:hover{
+	animation-play-state:paused;
+}
+span{
+	float: right;
+	vertical-align: bottom;
+}
+#name{
+	position: relative;
+}
+h1{
+	text-align: center;
+}
+.parallax {
+	margin: 0px;
+	background: url("homeq.jpg") repeat fixed 100%;
+	background-size: 100%;
+}
+.parallax-inner{
+	padding-top: 18%;
+	padding-bottom: 18%;
+}
+@font-face {
+    font-family:myFont;
+    src: url(mister.ttf);
+}
+
+#h1_1{
+    font-family:myFont;
+    color:#0b7dda;
+    font-size:50px;
+}
+.image_1{float:right;height:125px;width:200px;}
+.image_2{float:left;height:125px;width:200px;}
+.image_3{float:right;height:125px;width:200px;}
+.image_4{float:left;height:150px;width:200px;}
+#b2.c2{height:500px}
+.select-style select {
+    border: none;
+    background-color:#0b7dda ;
+    color:white;
+    padding: 7px 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.shadow{box-shadow:10px 10px;}
+/*background image*/
+.back{
+    background:url(home.jpg);
+    background-position:center;
+    color:black;
+    opacity:0.8;
+    background-size: 60px 70px;
+    background-repeat: no-repeat;
+    padding:8px;
+}
+/*main page text*/	
+.main_page_text{
+font-size:25px;color:#737373;
+float:left;
+}	
+.main_page_text1{
+font-size:25px;color:#737373;}
+big{color:black;}
+#sec_img{float:left;width:500px;}
+#l6{color:#0b7dda;font-size:20px;text-align:center;}
+#med {width:500px;}
+#art{width:450px;}
+#contact{
+	color:red;
+}
+#contact:hover{
+	color:blue;
+}
+
+.button {
+  padding: 10px 10px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #2196F3;
+  border: none;
+  border-radius: 15 px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3299CC}
+
+.button:active {
+  background-color: #3299CC;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.lst{
+	width:100%;
+    background-color:#0b6dd0;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+input[type=number] {
+    width: 168px;
+
+}
